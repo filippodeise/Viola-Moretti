@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viola Moretti – Wedding Planner Certificata | Bressanone, Trentino Alto Adige</title>
+<meta name="description" content="Wedding planner certificata AIWP a Bressanone. Organizzo matrimoni su misura da Bressanone a Trento: cerimonie civili, religiose, destination wedding. Consulenza gratuita.">
+<meta name="keywords" content="wedding planner Bressanone, wedding planner Trentino Alto Adige, matrimonio Bressanone, organizzazione matrimonio Bolzano, wedding planner certificata, matrimonio di lusso Dolomiti, destination wedding Trentino, organizzazione matrimonio Trento">
+<meta property="og:title" content="Viola Moretti – Wedding Planner Certificata | Bressanone">
+<meta property="og:description" content="Matrimoni su misura nel cuore del Trentino Alto Adige. Certificazione AIWP. Consulenza gratuita.">
+<meta property="og:type" content="website">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+<style>
+  :root {
+    --cream: #faf8f4;
+    --ivory: #f2ede3;
+    --parchment: #e8e0cf;
+    --gold: #b8975a;
+    --gold-light: #d4b47a;
+    --gold-dark: #8a6d3a;
+    --text-dark: #2c2318;
+    --text-mid: #5a4d3a;
+    --text-light: #9c8c72;
+    --white: #ffffff;
+    --border: rgba(184,151,90,0.2);
+    --border-strong: rgba(184,151,90,0.4);
+  }
+ 
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+  html { scroll-behavior: smooth; }
+ 
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+ 
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+ 
+  /* ─── COOKIE BANNER ─── */
+  #cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--text-dark);
+    color: rgba(255,255,255,0.85);
+    padding: 1.2rem 2rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 0.82rem;
+    flex-wrap: wrap;
+    transform: translateY(100%);
+    animation: slideUpCookie 0.6s 1s ease forwards;
+  }
+  @keyframes slideUpCookie { to { transform: translateY(0); } }
+  #cookie-banner a { color: var(--gold-light); }
+  .cookie-btn {
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    padding: 0.55rem 1.4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+  .cookie-btn:hover { background: var(--gold-dark); }
+  .cookie-btn.secondary {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-left: 0.5rem;
+  }
+ 
+  /* ─── URGENCY BANNER ─── */
+  .urgency-bar {
+    background: var(--gold);
+    color: var(--white);
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .urgency-bar span { opacity: 0.7; margin: 0 0.8rem; }
+ 
+  /* ─── NAVBAR ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(250,248,244,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: transform 0.35s ease;
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+  .nav-logo em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .nav-cta {
+    background: transparent;
+    border: 1.5px solid var(--gold);
+    color: var(--gold-dark);
+    padding: 0.55rem 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+  .nav-cta:hover {
+    background: var(--gold);
+    color: var(--white);
+  }
+  nav.hidden { transform: translateY(-100%); }
+ 
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 68px;
+    overflow: hidden;
+  }
+  .hero-content {
+    padding: 6rem 4rem 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    display: block;
+  }
+  .hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 300;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+  .hero h1 strong {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    max-width: 420px;
+    line-height: 1.8;
+  }
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--white);
+    padding: 0.85rem 2.2rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.25s;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-dark); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--text-dark);
+    padding: 0.85rem 2.2rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1px solid var(--parchment);
+    transition: all 0.25s;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .btn-secondary:hover { border-color: var(--gold); color: var(--gold-dark); }
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+  .stat-item {}
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 0.3rem;
+  }
+  .hero-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+  .hero-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 30%);
+  }
+  .hero-ornament {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(184,151,90,0.4);
+    border-radius: 50%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    text-align: center;
+    line-height: 1.3;
+    padding: 10px;
+    background: rgba(250,248,244,0.7);
+  }
+ 
+  /* ─── PROOF BAR ─── */
+  .proof-bar {
+    background: var(--text-dark);
+    padding: 1rem 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .proof-track {
+    display: flex;
+    gap: 0;
+    width: max-content;
+    animation: scrollLeft 28s linear infinite;
+  }
+  @keyframes scrollLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .proof-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 2.5rem;
+    white-space: nowrap;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+  }
+  .proof-sep {
+    color: var(--gold);
+    font-size: 1rem;
+  }
+ 
+  /* ─── SECTION WRAPPER ─── */
+  section { padding: 6rem 2rem; }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .section-label::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--gold);
+    display: block;
+  }
+  .section-title {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  .section-title em { font-style: italic; color: var(--gold-dark); }
+  .section-sub {
+    font-size: 1.05rem;
+    color: var(--text-mid);
+    font-weight: 300;
+    max-width: 520px;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+ 
+  /* ─── SECTION CTA ROW ─── */
+  .section-cta-row {
+    text-align: center;
+    margin-top: 3rem;
+  }
+ 
+  /* ─── PROBLEMA ─── */
+  .problema { background: var(--ivory); }
+  .drama-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  }
+  .drama-side { text-align: center; }
+  .drama-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .drama-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--text-mid);
+    line-height: 1.5;
+  }
+  .drama-divider {
+    width: 1px;
+    height: 80px;
+    background: var(--border-strong);
+    position: relative;
+  }
+  .drama-divider::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--ivory);
+    padding: 0.3rem;
+    color: var(--gold);
+    font-size: 1rem;
+  }
+  .drama-stat {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--gold);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .problem-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .problem-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 2rem 1.8rem;
+    transition: border-color 0.25s;
+  }
+  .problem-card:hover { border-color: var(--gold-light); }
+  .problem-card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .problem-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+  }
+  .problem-card p {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.75;
+  }
+  .problem-card .highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--gold-dark);
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+    display: block;
+  }
+ 
+  /* ─── SOLUZIONE ─── */
+  .soluzione-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .soluzione-text p {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    line-height: 1.85;
+    margin-bottom: 2rem;
+  }
+  .feature-list { list-style: none; }
+  .feature-item {
+    display: flex;
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .feature-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--parchment);
+    font-weight: 500;
+    line-height: 1;
+    min-width: 36px;
+  }
+  .feature-content h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    margin-bottom: 0.3rem;
+  }
+  .feature-content p {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .sol-image-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .sol-image-wrap img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+  }
+  .sol-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  .sol-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .sol-card-sub {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+  .sol-includes {
+    list-style: none;
+    margin-bottom: 1.8rem;
+  }
+  .sol-includes li {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+  .sol-includes li::before {
+    content: '✦';
+    color: var(--gold);
+    font-size: 0.6rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+  .sol-guarantee {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+  }
+ 
+  /* ─── COME FUNZIONA ─── */
+  .come-funziona { background: var(--text-dark); color: var(--white); }
+  .come-funziona .section-title { color: var(--white); }
+  .come-funziona .section-sub { color: rgba(255,255,255,0.6); }
+  .come-funziona .section-label { color: var(--gold-light); }
+  .come-funziona .section-label::before { background: var(--gold-light); }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .step-item {
+    padding: 3rem 2.5rem;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+  }
+  .step-item:last-child { border-right: none; }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgba(184,151,90,0.15);
+    line-height: 1;
+    display: block;
+    margin-bottom: -0.5rem;
+  }
+  .step-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+  }
+  .step-item p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.8;
+  }
+  .step-connector {
+    position: absolute;
+    top: 4.5rem;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    background: var(--gold);
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 0.7rem;
+  }
+  .step-item:last-child .step-connector { display: none; }
+ 
+  /* ─── TESTIMONIANZE ─── */
+  .testi { background: var(--ivory); }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .testi-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 2.2rem;
+  }
+  .stars {
+    color: var(--gold);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+  .testi-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+  .testi-author {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .testi-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    flex-shrink: 0;
+  }
+  .testi-name {
+    font-weight: 500;
+    font-size: 0.88rem;
+    color: var(--text-dark);
+  }
+  .testi-context {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 0.2rem;
+  }
+ 
+  /* ─── FAQ ─── */
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.4rem 0;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    transition: color 0.2s;
+  }
+  .faq-question:hover { color: var(--gold-dark); }
+  .faq-icon {
+    color: var(--gold);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+  .faq-item.open .faq-answer { max-height: 400px; padding-bottom: 1.4rem; }
+  .faq-answer p {
+    font-size: 0.92rem;
+    color: var(--text-mid);
+    line-height: 1.85;
+  }
+ 
+  /* ─── CTA FINALE ─── */
+  .cta-finale {
+    position: relative;
+    overflow: hidden;
+    background: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+  }
+  .cta-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=1400&q=70');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.18;
+  }
+  .cta-finale .container { position: relative; z-index: 2; }
+  .cta-finale h2 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  .cta-finale p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.65);
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+  }
+  .cta-buttons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .btn-wa {
+    background: #25D366;
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    transition: all 0.25s;
+  }
+  .btn-wa:hover { background: #1da851; }
+  .btn-tel {
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    transition: all 0.25s;
+  }
+  .btn-tel:hover { border-color: var(--gold-light); color: var(--gold-light); }
+  .cta-reassure {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  .cta-reassure-item {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .cta-reassure-item::before {
+    content: '✦';
+    color: var(--gold);
+    font-size: 0.6rem;
+  }
+ 
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--text-dark);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 3rem 2rem 2rem;
+    color: rgba(255,255,255,0.5);
+    font-size: 0.82rem;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  .footer-brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 0.5rem;
+  }
+  .footer-payoff {
+    font-style: italic;
+    color: var(--gold-light);
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+  .footer-info p { margin-bottom: 0.4rem; }
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold-light); }
+ 
+  /* ─── FLOATING WA ─── */
+  #float-wa {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    width: 56px; height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    text-decoration: none;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.35s, transform 0.35s;
+    pointer-events: none;
+  }
+  #float-wa.visible { opacity: 1; transform: scale(1); pointer-events: all; }
+  #float-wa:hover { background: #1da851; transform: scale(1.08); }
+  #float-wa svg { width: 26px; height: 26px; fill: #fff; }
+ 
+  /* ─── REVEAL ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+ 
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-content { padding: 3rem 1.5rem; }
+    .hero-image { height: 50vw; max-height: 320px; }
+    .hero-image::after { background: linear-gradient(to bottom, var(--cream) 0%, transparent 30%); }
+    .hero-stats { gap: 1.5rem; }
+    .drama-box { grid-template-columns: 1fr; gap: 1.5rem; }
+    .drama-divider { display: none; }
+    .problem-cards { grid-template-columns: 1fr; }
+    .soluzione-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .step-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .step-item:last-child { border-bottom: none; }
+    .step-connector { display: none; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+    .footer-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+    .footer-bottom { flex-direction: column; }
+    .hero-ctas { flex-direction: column; }
+    .hero h1 { font-size: 2.4rem; }
+  }
+ 
+  /* ─── PRIVACY / COOKIE MODAL ─── */
+  #privacy-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  #privacy-modal.open { display: flex; }
+  .modal-box {
+    background: var(--cream);
+    max-width: 580px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2.5rem;
+  }
+  .modal-box h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .modal-box p, .modal-box ul {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+  .modal-close {
+    background: var(--gold);
+    color: var(--white);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+</style>
+</head>
+<body>
+ 
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" role="banner">
+  <span>Questo sito utilizza cookie tecnici per garantire la migliore esperienza. <a href="#" onclick="openModal('cookie-modal'); return false;">Scopri di più</a></span>
+  <div style="display:flex; gap:0.5rem;">
+    <button class="cookie-btn secondary" onclick="closeCookie()">Solo necessari</button>
+    <button class="cookie-btn" onclick="closeCookie()">Accetta tutti</button>
+  </div>
+</div>
+ 
+<!-- PRIVACY MODAL -->
+<div id="privacy-modal">
+  <div class="modal-box" id="modal-content">
+    <h3 id="modal-title">Privacy Policy</h3>
+    <div id="modal-body">
+      <p>Il titolare del trattamento è <strong>[RAGIONE SOCIALE – sostituire]</strong>, P.IVA [INSERIRE], con sede in [INDIRIZZO].</p>
+      <p>I dati personali forniti tramite questo sito (nome, contatto WhatsApp, telefono) sono trattati esclusivamente per rispondere alle richieste di informazioni e consulenza. I dati non vengono ceduti a terzi. L'interessato può esercitare i diritti previsti dagli artt. 15-22 del GDPR scrivendo a [EMAIL].</p>
+      <p>Per la Cookie Policy: il sito utilizza cookie tecnici necessari al funzionamento. Non sono utilizzati cookie di profilazione o di terze parti senza consenso.</p>
+    </div>
+    <button class="modal-close" onclick="closeModal()">Chiudi</button>
+  </div>
+</div>
+ 
+<!-- URGENCY BANNER -->
+<div class="urgency-bar">
+  🗓 Disponibilità limitata per il 2025<span>✦</span>Solo 4 date ancora libere per la stagione estiva
+</div>
+ 
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Viola <em>Moretti</em></a>
+    <a href="#contatti" class="nav-cta">Consulenza gratuita</a>
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Wedding Planner Certificata AIWP</div>
+    <h1>Il tuo matrimonio,<br><strong>esattamente come</strong><br><em>lo hai sempre immaginato</em></h1>
+    <p class="hero-sub">Ogni coppia ha una storia unica. Organizzo matrimoni su misura nel cuore del Trentino Alto Adige — dalla cerimonia al viaggio di nozze — con cura, esperienza certificata e una rete di fornitori d'eccellenza.</p>
+    <div class="hero-ctas">
+      <a href="#contatti" class="btn-primary">Richiedi la consulenza gratuita</a>
+      <a href="#come-funziona" class="btn-secondary">Come lavoro</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">50 km</span>
+        <div class="stat-label">Area operativa<br>da Bressanone a Trento</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">200+</span>
+        <div class="stat-label">Ospiti gestibili<br>in totale serenità</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <div class="stat-label">Servizio personalizzato<br>zero pacchetti fissi</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=900&q=80" alt="Matrimonio elegante Trentino Alto Adige" loading="eager">
+    <div class="hero-ornament">Certificata<br>AIWP</div>
+  </div>
+</section>
+ 
+<!-- PROOF BAR -->
+<div class="proof-bar" aria-hidden="true">
+  <div class="proof-track">
+    <div class="proof-item">Certificazione AIWP<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Matrimoni civili e religiosi<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Destination Wedding<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Bressanone · Bolzano · Trento<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Fornitori d'eccellenza selezionati<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Budget fino a €100.000<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Consulenza gratuita<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Viaggi di nozze inclusi<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Certificazione AIWP<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Matrimoni civili e religiosi<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Destination Wedding<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Bressanone · Bolzano · Trento<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Fornitori d'eccellenza selezionati<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Budget fino a €100.000<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Consulenza gratuita<span class="proof-sep">✦</span></div>
+    <div class="proof-item">Viaggi di nozze inclusi<span class="proof-sep">✦</span></div>
+  </div>
+</div>
+ 
+<!-- IL PROBLEMA -->
+<section class="problema reveal" id="problema">
+  <div class="container">
+    <div class="section-label">Il problema</div>
+    <h2 class="section-title">Organizzare un matrimonio<br><em>è bellissimo. Fin quando non inizia davvero.</em></h2>
+    <p class="section-sub">Il 73% delle coppie racconta che i mesi di pianificazione sono stati la parte più stressante di tutto il percorso. Non deve andare così.</p>
+ 
+    <div class="drama-box reveal">
+      <div class="drama-side">
+        <span class="drama-label">Senza supporto professionale</span>
+        <div class="drama-text">Decine di fornitori da coordinare, preventivi da confrontare, scadenze da non perdere — tutto sulle spalle vostre.</div>
+        <span class="drama-stat">~200 ore</span>
+        <span class="drama-label" style="margin-top:0.3rem; display:block;">di lavoro stimato fai-da-te</span>
+      </div>
+      <div class="drama-divider"></div>
+      <div class="drama-side">
+        <span class="drama-label">Con Viola Moretti</span>
+        <div class="drama-text">Voi vi godete il fidanzamento. Io gestisco tutto il resto, con professionalità certificata e fornitori già selezionati.</div>
+        <span class="drama-stat">Zero stress</span>
+        <span class="drama-label" style="margin-top:0.3rem; display:block;">il giorno più bello della vostra vita</span>
+      </div>
+    </div>
+ 
+    <div class="problem-cards">
+      <div class="problem-card reveal reveal-delay-1">
+        <span class="problem-card-icon">🌿</span>
+        <h3>"Non so da dove iniziare"</h3>
+        <p>Avete la data, forse una location in testa, e l'idea vaga di quello che volete. Ma tra location, catering, fiori, foto, auto e musica — non è chiaro chi contattare prima e come far quadrare tutto.</p>
+        <span class="highlight">"Ho aperto il secondo preventivo e già non capivo più niente."</span>
+      </div>
+      <div class="problem-card reveal reveal-delay-2">
+        <span class="problem-card-icon">🏔</span>
+        <h3>"Non conosciamo bene il territorio"</h3>
+        <p>Avete scelto il Trentino Alto Adige perché è bellissimo. Ma da fuori regione è impossibile sapere quali location accettano matrimoni, quali fornitori sono davvero affidabili e come muoversi tra una vallata e l'altra.</p>
+        <span class="highlight">"La nostra location ideale non era nemmeno sul web."</span>
+      </div>
+      <div class="problem-card reveal reveal-delay-3">
+        <span class="problem-card-icon">💍</span>
+        <h3>"Tutto sembra uguale, niente ci somiglia"</h3>
+        <p>Scrollate matrimoni su Pinterest e Instagram e tutto sembra bellissimo ma generico. Volete qualcosa che parli davvero di voi — ma nessuno sembra disposto ad ascoltare prima di proporre il solito "pacchetto".</p>
+        <span class="highlight">"Cercavamo qualcuno che capisse, non che vendesse."</span>
+      </div>
+    </div>
+ 
+    <div class="section-cta-row">
+      <a href="#contatti" class="btn-primary">Parla con Viola — è gratuito</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- LA SOLUZIONE -->
+<section id="soluzione" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-label reveal">La soluzione</div>
+    <h2 class="section-title reveal">Un matrimonio <em>su misura,</em><br>dall'inizio alla fine</h2>
+ 
+    <div class="soluzione-grid">
+      <div class="soluzione-text reveal">
+        <p>Non organizzo eventi. Costruisco il vostro matrimonio partendo da voi — dalla vostra storia, dai vostri gusti, dal vostro budget. La mia certificazione AIWP non è un dettaglio: è la garanzia che dietro ogni scelta c'è un metodo, una formazione seria e la capacità di gestire imprevisti con lucidità.</p>
+        <p>Lavoro in un raggio di 50 km da Bressanone fino a Trento, con una rete di fornitori già selezionati e verificati: fioristi, fotografi, location esclusive, auto di lusso, catering locali d'eccellenza.</p>
+ 
+        <ul class="feature-list">
+          <li class="feature-item">
+            <span class="feature-num">01</span>
+            <div class="feature-content">
+              <h4>Coordinamento totale dei fornitori</h4>
+              <p>Mi occupo io di tutti i contatti, i preventivi, le trattative e la firma dei contratti. Voi non dovete gestire nessun fornitore da soli.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-num">02</span>
+            <div class="feature-content">
+              <h4>Conoscenza profonda del territorio</h4>
+              <p>Location nascoste, valli fuori dagli itinerari turistici, fornitori locali di qualità: conosco il Trentino Alto Adige come pochi.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-num">03</span>
+            <div class="feature-content">
+              <h4>Personalizzazione senza limiti</h4>
+              <p>Nessun pacchetto preimpostato. Il vostro matrimonio viene costruito partendo dalla vostra storia. Ogni dettaglio riflette chi siete.</p>
+            </div>
+          </li>
+          <li class="feature-item">
+            <span class="feature-num">04</span>
+            <div class="feature-content">
+              <h4>Gestione completa il giorno del matrimonio</h4>
+              <p>Coordino tutto in tempo reale — dalle prove alla cerimonia, dal pranzo alla festa serale. Voi siete presenti, non in servizio.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+ 
+      <div class="reveal reveal-delay-2">
+        <div class="sol-image-wrap">
+          <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=700&q=80" alt="Viola Moretti al lavoro nella pianificazione di un matrimonio">
+        </div>
+        <div class="sol-card">
+          <div class="sol-card-title">Servizio completo di Wedding Planning</div>
+          <div class="sol-card-sub">— tutto incluso, nessuna sorpresa —</div>
+          <ul class="sol-includes">
+            <li>Consulenza iniziale gratuita e senza impegno</li>
+            <li>Selezione e coordinamento di tutti i fornitori</li>
+            <li>Gestione budget e scadenze</li>
+            <li>Supporto per location in Trentino Alto Adige</li>
+            <li>Presenza e coordinamento il giorno del matrimonio</li>
+            <li>Assistenza per il viaggio di nozze (3 destinazioni)</li>
+            <li>Reperibilità costante via WhatsApp</li>
+          </ul>
+          <a href="#contatti" class="btn-primary" style="width:100%; text-align:center; display:block;">Scopri disponibilità →</a>
+          <p class="sol-guarantee">Consulenza iniziale gratuita · nessun impegno · risposta entro 24h</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- COME FUNZIONA -->
+<section class="come-funziona reveal" id="come-funziona">
+  <div class="container">
+    <div class="section-label">Il processo</div>
+    <h2 class="section-title">Tre passi verso<br><em>il giorno più bello</em></h2>
+    <p class="section-sub">Iniziare è semplice. Una chiacchierata, e già si capisce se possiamo fare un pezzo di strada insieme.</p>
+ 
+    <div class="steps-grid">
+      <div class="step-item reveal reveal-delay-1">
+        <span class="step-num">01</span>
+        <h3>Consulenza gratuita</h3>
+        <p>Ci conosciamo via WhatsApp o di persona. Mi raccontate di voi, della data, del luogo che avete in mente. Senza moduli, senza impegni. Solo ascolto.</p>
+        <div class="step-connector">→</div>
+      </div>
+      <div class="step-item reveal reveal-delay-2">
+        <span class="step-num">02</span>
+        <h3>Progettazione su misura</h3>
+        <p>Costruiamo insieme il vostro matrimonio: selezioniamo fornitori, definiamo il budget, scegliamo la location. Ogni scelta è motivata e condivisa con voi.</p>
+        <div class="step-connector">→</div>
+      </div>
+      <div class="step-item reveal reveal-delay-3">
+        <span class="step-num">03</span>
+        <h3>Il giorno del matrimonio</h3>
+        <p>Sono presente per coordinare ogni momento — dalla preparazione alla cerimonia, dall'aperitivo al brindisi finale. Voi siete sposi. Non organizzatori.</p>
+      </div>
+    </div>
+ 
+    <div class="section-cta-row" style="margin-top: 3rem;">
+      <a href="#contatti" class="btn-primary">Inizia con la consulenza gratuita</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- TESTIMONIANZE -->
+<section class="testi" id="testimonianze">
+  <div class="container">
+    <div class="section-label reveal">Testimonianze</div>
+    <h2 class="section-title reveal">Parole di chi<br><em>ha già detto sì</em></h2>
+    <p class="section-sub reveal">Ogni matrimonio è una storia diversa. Queste sono alcune delle storie che mi hanno accompagnato.</p>
+ 
+    <div class="testi-grid">
+      <div class="testi-card reveal reveal-delay-1">
+        <span class="stars">★★★★★</span>
+        <p class="testi-text">"Venivamo da Milano e non conoscevamo nessuno in zona. Viola ha trovato una location che non avremmo mai scoperto da soli — una terrazza con vista sulle Dolomiti che ha lasciato tutti i nostri ospiti senza parole. Ci ha gestito ogni fornitore senza che dovessimo preoccuparci di niente."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">F</div>
+          <div>
+            <div class="testi-name">Francesca & Marco</div>
+            <div class="testi-context">Milano — Matrimonio destination, estate 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <span class="stars">★★★★★</span>
+        <p class="testi-text">"Eravamo all'inizio completamente persi. Avevamo la data ma non sapevamo da dove cominciare. Viola ha messo ordine in tutto in pochissimo tempo — budget, fornitori, tempi. Il giorno del matrimonio non ho dovuto pensare a nulla. Ho solo vissuto ogni momento."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">C</div>
+          <div>
+            <div class="testi-name">Chiara & Davide</div>
+            <div class="testi-context">Bolzano — Matrimonio civile, primavera 2025</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-3">
+        <span class="stars">★★★★★</span>
+        <p class="testi-text">"Cercavamo qualcuno che capisse davvero la nostra visione — niente di standard, niente di già visto. Viola ha ascoltato per ore e ha costruito un matrimonio che sembrava venuto fuori da un libro. La sua rete di fornitori è incredibile. Torneremmo a sposarci solo per lavorare ancora con lei."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <div class="testi-name">Alice & Thomas</div>
+            <div class="testi-context">Trento — Matrimonio misto italo-tedesco, autunno 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="section-cta-row">
+      <a href="#contatti" class="btn-primary">Voglio un matrimonio come questo</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- FAQ -->
+<section id="faq" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-label reveal">Domande frequenti</div>
+    <h2 class="section-title reveal" style="text-align:center;">Tutto quello che<br><em>volete sapere prima</em></h2>
+    <p class="section-sub reveal" style="text-align:center; margin: 0 auto 3rem;">Le domande più comuni — con risposte vere, non slogan.</p>
+ 
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          "Non abbiamo ancora una data precisa. Ha senso contattarvi adesso?"
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Assolutamente sì — anzi, prima contattate meglio è. I matrimoni in Trentino Alto Adige si prenotano con un anno di anticipo, soprattutto per le stagioni estiva e autunnale. La consulenza iniziale è gratuita e serve proprio a capire insieme se siamo compatibili, che voi abbiate già tutto deciso o che stiate ancora sognando ad occhi aperti.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Come funziona il costo del servizio? Ci sono spese nascoste?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Nessuna sorpresa. Prima della consulenza vi spiego con chiarezza come si struttura il servizio e cosa è incluso. Non lavoro con commissioni nascoste sui fornitori: la mia trasparenza è parte del servizio. Ne parliamo insieme, senza impegni, nella prima chiacchierata.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Organizzo matrimoni anche per coppie non residenti in zona?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sì, è una delle specializzazioni che mi stanno più a cuore. Lavoro spesso con coppie da fuori regione e dall'estero che scelgono il Trentino Alto Adige come destinazione per il loro matrimonio. La mia conoscenza del territorio e la rete di fornitori già attiva vi permettono di organizzare tutto a distanza, con la massima tranquillità. Gestiamo tutto via WhatsApp, videochiamate e incontri mirati.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Cosa garantisce la certificazione AIWP rispetto ad altre wedding planner?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>L'AIWP è l'Associazione Italiana Wedding Planner, presieduta da Clara Trama — anche senatrice della Repubblica. Non è un corso online qualsiasi: è una formazione professionale riconosciuta a livello nazionale, con standard precisi su gestione dei fornitori, contrattualistica, gestione del budget e coordinamento operativo. Nel mercato locale, la maggior parte delle persone che si definiscono "wedding planner" non ha nessuna certificazione di questo tipo. Per voi significa affidarvi a qualcuno che ha dimostrato competenza in modo verificabile.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          Quanto tempo prima devo iniziare a pianificare?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Per un matrimonio estivo o autunnale in Trentino Alto Adige, idealmente dovreste iniziare almeno 12 mesi prima. Le location migliori e i fornitori più richiesti si esauriscono in fretta. Per matrimoni invernali o primaverili, 8–10 mesi sono generalmente sufficienti. Se avete meno tempo, contattatemi comunque: in certi casi si riesce a fare molto anche con finestre più strette.</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="section-cta-row">
+      <a href="#contatti" class="btn-primary">Hai altre domande? Scrivimi</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- CTA FINALE -->
+<section class="cta-finale" id="contatti">
+  <div class="cta-bg"></div>
+  <div class="container" style="padding: 6rem 2rem;">
+    <div class="section-label reveal" style="justify-content: center; color: var(--gold-light);">
+      <span style="width:24px; height:1px; background: var(--gold-light); display:block;"></span>
+      Inizia ora
+    </div>
+    <h2 class="reveal">Il vostro matrimonio inizia<br>con una conversazione</h2>
+    <p class="reveal">Nessun impegno, nessun modulo. Solo una chiacchierata per capire se possiamo fare questo viaggio insieme. Rispondo di persona, sempre.</p>
+    <div class="cta-buttons reveal">
+      <a href="https://wa.me/39NUMERODASOSTITIURE?text=Ciao%20Viola%2C%20vorrei%20informazioni%20per%20il%20mio%20matrimonio%20in%20Trentino%20Alto%20Adige" class="btn-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.28 7.048L.787 23.325l4.389-1.451A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.007-1.374l-.36-.213-3.714 1.228 1.249-3.637-.234-.375A9.784 9.784 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+        Scrivimi su WhatsApp
+      </a>
+      <a href="tel:+39NUMERODASOSTITIURE" class="btn-tel">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Chiama adesso
+      </a>
+    </div>
+    <div class="cta-reassure reveal">
+      <span class="cta-reassure-item">Risposta entro 24 ore</span>
+      <span class="cta-reassure-item">Nessun impegno</span>
+      <span class="cta-reassure-item">Consulenza gratuita</span>
+      <span class="cta-reassure-item">Rispondo io di persona</span>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">Viola <em style="font-style:italic; color: var(--gold-light);">Moretti</em></div>
+      <div class="footer-payoff">Wedding Planner Certificata AIWP</div>
+      <p>Matrimoni su misura in Trentino Alto Adige.<br>Bressanone · Bolzano · Trento e dintorni.</p>
+    </div>
+    <div class="footer-info">
+      <p>📍 Bressanone (BZ), Trentino Alto Adige</p>
+      <p>📞 <a href="tel:+39NUMERODASOSTITIURE" style="color: rgba(255,255,255,0.5); text-decoration:none;">+39 [NUMERO DA SOSTITUIRE]</a></p>
+      <p>💬 <a href="https://wa.me/39NUMERODASOSTITIURE" style="color: rgba(255,255,255,0.5); text-decoration:none;" target="_blank">WhatsApp</a></p>
+      <p style="margin-top:0.8rem; color: rgba(255,255,255,0.3);">P.IVA: [DA INSERIRE]</p>
+      <p style="color: rgba(255,255,255,0.3);">AIWP – Associazione Italiana Wedding Planner</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Viola Moretti – Tutti i diritti riservati</span>
+    <div class="footer-links">
+      <a href="#" onclick="openModal('privacy-modal'); return false;">Privacy Policy</a>
+      <a href="#" onclick="openModal('cookie-modal'); return false;">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+ 
+<!-- FLOATING WA -->
+<a href="https://wa.me/39NUMERODASOSTITIURE?text=Ciao%20Viola%2C%20vorrei%20informazioni%20per%20il%20mio%20matrimonio" id="float-wa" target="_blank" rel="noopener" aria-label="Contatta via WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.28 7.048L.787 23.325l4.389-1.451A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.007-1.374l-.36-.213-3.714 1.228 1.249-3.637-.234-.375A9.784 9.784 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+</a>
+ 
+<script>
+// ─── NAV HIDE/SHOW ───
+const navbar = document.getElementById('navbar');
+let lastY = 0;
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  if (y > lastY && y > 100) navbar.classList.add('hidden');
+  else navbar.classList.remove('hidden');
+  lastY = y;
+ 
+  // Float WA after 60%
+  const pct = y / (document.body.scrollHeight - window.innerHeight);
+  document.getElementById('float-wa').classList.toggle('visible', pct > 0.6);
+}, { passive: true });
+ 
+// ─── REVEAL ON SCROLL ───
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+ 
+// ─── FAQ ACCORDION ───
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+ 
+// ─── COOKIE BANNER ───
+function closeCookie() {
+  document.getElementById('cookie-banner').style.display = 'none';
+  localStorage.setItem('cookie_accepted', '1');
+}
+if (localStorage.getItem('cookie_accepted')) {
+  document.getElementById('cookie-banner').style.display = 'none';
+}
+ 
+// ─── MODALS ───
+function openModal(id) {
+  if (id === 'privacy-modal') {
+    document.getElementById('modal-title').textContent = 'Privacy Policy';
+    document.getElementById('modal-body').innerHTML = '<p>Il titolare del trattamento è <strong>[RAGIONE SOCIALE – sostituire]</strong>, P.IVA [INSERIRE], con sede in Bressanone (BZ).</p><p>I dati personali forniti tramite questo sito (nome, numero di telefono, contatto WhatsApp) sono trattati esclusivamente per rispondere alle richieste di informazioni e consulenza matrimoniale. I dati non vengono ceduti a terzi né utilizzati per finalità diverse da quelle indicate. Il trattamento avviene su base contrattuale (art. 6, par. 1, lett. b GDPR) e su consenso dell\'interessato.</p><p>L\'interessato può esercitare i diritti previsti dagli artt. 15-22 del GDPR (accesso, rettifica, cancellazione, opposizione) scrivendo a [EMAIL DA INSERIRE].</p>';
+  } else {
+    document.getElementById('modal-title').textContent = 'Cookie Policy';
+    document.getElementById('modal-body').innerHTML = '<p>Questo sito utilizza esclusivamente cookie tecnici necessari al corretto funzionamento. Non vengono utilizzati cookie di profilazione, tracciamento o di terze parti senza il consenso dell\'utente.</p><p>I cookie tecnici non richiedono consenso ai sensi del Provvedimento del Garante Privacy dell\'8 maggio 2014. Chiudendo questo banner o continuando la navigazione, si acconsente all\'uso dei soli cookie tecnici.</p>';
+  }
+  document.getElementById('privacy-modal').classList.add('open');
+}
+function closeModal() {
+  document.getElementById('privacy-modal').classList.remove('open');
+}
+document.getElementById('privacy-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+</script>
+ 
+</body>
+</html>
