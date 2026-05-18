@@ -66,6 +66,45 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255
 .nav-cta:hover{background:var(--gold);color:#fff}
 nav.hidden{transform:translateY(-100%)}
 
+/* FEDI */
+.wrapper .cover-overlay {
+    background: var(--background-color);
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+  style attribute {
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --gallery-name-size-sm: clamp(14px, 7.5svw, 180px);
+    --gallery-name-size-md: clamp(14px, 2.5svw, 180px);
+    --title-letter-spacing: 0.03em;
+    --primary-font-family: "TT_Norms_Pro";
+    --primary-font-weight: 500;
+    --primary-font-style: normal;
+}
+  .wrapper {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --primary-font-family: "TT_Norms_Pro";
+    --primary-font-weight: 500;
+    --primary-font-style: normal;
+    --title-letter-spacing: 0;
+    font-family: var(--primary-font-family);
+    font-weight: var(--primary-font-weight);
+    font-style: var(--primary-font-style);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3.2 / 1;
+    max-width: 2570px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
 /* HERO */
 .hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;margin-top:68px}
 .hero-c{padding:5rem 4rem 4rem 6rem;display:flex;flex-direction:column;justify-content:center}
